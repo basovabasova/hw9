@@ -70,6 +70,7 @@ class Pen
     {
         echo "На мой взгляд, {$this -> mark} - очень дорогая ручка. {$this -> price}руб., Карл!" . '<br>';
     }
+    
     public function getNewPen()
     {
         if ($this -> price > 30000) {
@@ -163,6 +164,7 @@ class News
         $this -> time = $time;
         $this -> content = $content;
     }
+
     public function getNews ()
     {
         $news = '<h3>' . $this -> title . '</h3>' . '<small>' . $this -> time . '</small>' . '<p>' . $this -> content . '</p>' . '<br>';
